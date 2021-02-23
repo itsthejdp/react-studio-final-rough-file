@@ -10,7 +10,7 @@ export default class Studio extends Component {
     });
   };
   render() {
-    const {id, city, img, name, info} = this.props.studio;
+    const {id, city, img, name, info, rate} = this.props.studio;
     const {removeStudio} = this.props;
 
     return (
@@ -24,6 +24,7 @@ export default class Studio extends Component {
         <div className="studio-info">
           <h3>{city}</h3>
           <h4>{name}</h4>
+          <h4>{rate}</h4>
           <h5>
             info{" "}
             <span onClick={this.handleInfo}>
